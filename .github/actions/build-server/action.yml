@@ -20,7 +20,7 @@ runs:
     #   shell: bash
     - run: |
         cat << ENV > ./.env
-          GOOGLE_ENTRYPOINT=${{ secrets.GOOGLE_ENTRYPOINT }}
+          GOOGLE_ENTRYPOINT=python3 manage.py runserver
          ENV
       shell: bash
     - run: | # --cache-image $ECR_REGISTRY/$ECR_REPO:cache \

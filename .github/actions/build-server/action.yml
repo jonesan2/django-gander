@@ -18,6 +18,13 @@ runs:
     #       VAR1=${{ secrets.ENV_VAR1 }}
     #      ENV
     #   shell: bash
+
+    - run: |
+        cat << ENV > ./.env
+          GOOGLE_ENTRYPOINT=python3 manage.py runserver
+         ENV
+      shell: bash
+
     - run: | # --cache-image $ECR_REGISTRY/$ECR_REPO:cache \
         IMAGE_ARN=$ECR_REGISTRY/$ECR_REPO:$PROJECT-$PR_NUMBER
         pack build $IMAGE_ARN \

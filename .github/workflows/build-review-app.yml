@@ -17,7 +17,6 @@ env:
   USER_DOMAIN: andrewrayjones@gmail.com
   REGION: us-east-2 # us-east-2
   PR_NUMBER: ${{ github.event.pull_request.number }}
-  GOOGLE_ENTRYPOINT: /bin/bash -c python3 manage.py runserver
 
 #   teardown:
 #     runs-on: ubuntu-20.04

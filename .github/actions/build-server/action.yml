@@ -23,6 +23,7 @@ runs:
         cat << ENV > ./.env
           GOOGLE_ENTRYPOINT=python3 manage.py runserver
          ENV
+        cat .env
       shell: bash
 
     - run: | # --cache-image $ECR_REGISTRY/$ECR_REPO:cache \

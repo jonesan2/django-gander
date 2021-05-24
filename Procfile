@@ -1,1 +1,1 @@
-web: python manage.py runserver
+web: /bin/bash -c python3 manage.py runserver

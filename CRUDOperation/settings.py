@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'django_gander',
         'USER': 'chris', # env('PG_USER'),
         'PASSWORD': 'password2', # env('PG_PW'),
-        'HOST': 'localhost', 
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }

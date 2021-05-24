@@ -23,7 +23,7 @@ runs:
         pack build $IMAGE_ARN \
         --builder $BUILDER \
         --path $SERVER_PATH \
-        --env "GOOGLE_ENTRYPOINT=python3 manage.py runserver" \
+        --env "GOOGLE_ENTRYPOINT=python3 manage.py runserver 8080" \
         --publish
         echo "IMAGE_ARN=$IMAGE_ARN" >> $GITHUB_ENV
       shell: bash

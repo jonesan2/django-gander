@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'CRUDOperation.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'django_gander',
         'USER': 'chris', # env('PG_USER'),
         'PASSWORD': 'password2', # env('PG_PW'),

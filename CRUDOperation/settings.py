@@ -32,7 +32,7 @@ SECRET_KEY = 'v=oo$j)hx^f%3n=-+6ke$t8-)ol8#5$mi5^tu)*m$xri@kkz^o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.gander.andrewrayjones.com', '.localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

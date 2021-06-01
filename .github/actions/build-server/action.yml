@@ -22,7 +22,7 @@ runs:
         IMAGE_ARN=$ECR_REGISTRY/$ECR_REPO:$PROJECT-$PR_NUMBER
         pack build $IMAGE_ARN \
         --builder $BUILDER \
-#        --path $SERVER_PATH \
+        --path $SERVER_PATH \
         --env "GOOGLE_ENTRYPOINT=python3 manage.py runserver 0.0.0.0:8080" \
         --publish
         echo "IMAGE_ARN=$IMAGE_ARN" >> $GITHUB_ENV

@@ -85,8 +85,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'django_gander',
-        'USER': 'hris', # env('PG_USER'),
-        'PASSWORD': 'pssword2', # env('PG_PW'),
+        'USER': env('PG_USER'),
+        'PASSWORD': env('PG_PW'),
         'HOST': 'localhost',
         'PORT': '5432',
     }
